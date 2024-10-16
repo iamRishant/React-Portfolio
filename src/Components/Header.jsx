@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Navbar from './Navbar'
 import vdo from './video.mp4'
@@ -21,6 +21,17 @@ const Header = () => {
       setIsPlaying(!isPlaying);  // Toggle the play/pause state
     }
   };
+
+  // when video ends automatically change the state of the button
+  useEffect(()=>{
+    videoRef.current.onended=()=>{
+      setIsPlaying(false);
+      videoRef.current.currentTime = 0;  // reset the video to the start when it ends
+    };
+  },[])
+
+  
+  
   return (
     <div className='h-screen w-full bg-[#080102] ' id='home'>
       <Navbar/>
