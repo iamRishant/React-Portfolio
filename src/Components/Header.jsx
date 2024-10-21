@@ -33,7 +33,7 @@ const Header = () => {
   
   
   return (
-    <div className='h-screen w-full bg-[#080102] ' id='home'>
+    <div className='h-screen w-full bg-[#080102]' id='home'>
       <Navbar/>
 
       <div className='h-[100vh] w-full flex'>
