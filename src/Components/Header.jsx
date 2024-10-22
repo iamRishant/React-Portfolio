@@ -39,18 +39,18 @@ const Header = () => {
       <div className='h-[90%] w-full flex sm:flex-col lg:flex-row'>
         <div className='lg:w-[50%]  text-white lg:pl-[7vw] lg:pt-[16vh] sm:w-[100vw] lg:h-[100%] sm:text-center sm:p-[4vh] sm:h-[60%]'>
             <h1 className='text-5xl mb-5'>Hello! I’m Rishant Rana</h1>
-            <p className='lg:text-2xl text-justify sm:text-xl'> A passionate front-end developer with a solid foundation in HTML, CSS, JavaScript, React, Redux, SQL, and C++. Currently in my fourth year of a bachelor's degree, I have a knack for creating dynamic, user-friendly web applications. My experience includes building various projects, such as e-commerce platforms and CRUD applications, utilizing libraries like Tailwind CSS and Framer Motion for responsive design and animations.
+            <p className='lg:text-2xl text-justify sm:text-sm'> A passionate front-end developer with a solid foundation in HTML, CSS, JavaScript, React, Redux, SQL, and C++. Currently in my fourth year of a bachelor's degree, I have a knack for creating dynamic, user-friendly web applications. My experience includes building various projects, such as e-commerce platforms and CRUD applications, utilizing libraries like Tailwind CSS and Framer Motion for responsive design and animations.
 
             In addition to coding, I enjoy teaching and sharing knowledge as a tutor. I’m eager to collaborate on innovative projects that push the boundaries of web development and enhance user experiences.</p>
         </div>
 
         <div className='lg:w-[50%] sm:w-[100vw] lg:h-[100%] sm:h-[60%]  flex items-center flex-col'>
-            <video className={`lg:h-[65vh] sm:h-[35vh] lg:mt-[9vh] sm:pt-[3vh] sm:${isPlaying ? "block":"hidden"} lg:block`} ref={videoRef}>
+            <video className={`lg:h-[65vh] sm:h-[30vh] lg:mt-[9vh] sm:pt-[3vh] sm:${isPlaying ? "block":"hidden"} lg:block`} ref={videoRef}>
                 <source src={vdo} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-            <div className='mt-0 sm:mt-[2vh]'>
-                <button onClick={handleToggleVideo} className='text-black bg-white p-2 rounded-lg font-bold hover:scale-105 duration-200 sm:text-3xl lg:text-xl'>{isPlaying ? 'Stop Me' : 'Hear Me'}</button>
+            <div className='mt-0 sm:mt-[1vh]'>
+                <button onClick={handleToggleVideo} className='text-black bg-white p-2 rounded-lg font-bold hover:scale-105 duration-200 sm:text-xl lg:text-xl'>{isPlaying ? 'Stop Me' : 'Hear Me'}</button>
             </div>
       </div>
       </div>
