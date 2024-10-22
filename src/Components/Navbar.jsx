@@ -28,7 +28,7 @@ const Navbar = () => {
               animate={{ opacity: 1, x: 0 }} 
               exit={{ opacity: 0, x: 20 }}    
               transition={{ duration: 0.2 }} 
-              className='lg:hidden sm:flex sm:absolute sm:flex-col bg-white w-full top-[6vh] left-0 sm:p-5 sm:font-bold sm:items-center'
+              className='lg:hidden sm:flex sm:absolute sm:flex-col bg-white w-full top-[7vh] left-0 sm:p-5 sm:font-bold sm:items-center'
             >
               <AnchorLink href='/red' className='sm:text-3xl sm:hover:bg-black sm:duration-200 sm:hover:text-white sm:w-full sm:text-center sm:rounded-lg sm:p-3'>About</AnchorLink>
               <AnchorLink href='/green' className='sm:text-3xl sm:hover:bg-black sm:duration-200 sm:hover:text-white sm:w-full sm:text-center sm:rounded-lg sm:p-3'>Projects</AnchorLink>
