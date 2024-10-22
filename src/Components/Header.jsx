@@ -50,7 +50,7 @@ const Header = () => {
                 Your browser does not support the video tag.
             </video>
             <div className='mt-0 sm:mt-[2vh]'>
-                <button onClick={handleToggleVideo} className='text-black bg-white p-2 rounded-lg font-bold hover:scale-105 duration-200 sm:text-3xl'>{isPlaying ? 'Stop Me' : 'Hear Me'}</button>
+                <button onClick={handleToggleVideo} className='text-black bg-white p-2 rounded-lg font-bold hover:scale-105 duration-200 sm:text-3xl lg:text-xl'>{isPlaying ? 'Stop Me' : 'Hear Me'}</button>
             </div>
       </div>
       </div>
