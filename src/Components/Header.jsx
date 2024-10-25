@@ -45,11 +45,11 @@ const Header = () => {
         </div>
 
         <div className='lg:w-[50%] sm:w-[100vw] lg:h-[100%] sm:h-[60%]  flex items-center flex-col '>
-            <video className={`lg:h-[65vh] sm:h-[30vh] lg:mt-[15vh] h-full sm:pt-[3vh] bg-red sm:${isPlaying ? "block":"hidden"} lg:block`} ref={videoRef}>
+            <video className={`lg:h-[65vh] sm:h-[35vh] lg:mt-[15vh] h-full sm:pt-[3vh] bg-red sm:${isPlaying ? "block":"hidden"} lg:block`} ref={videoRef}>
                 <source src={vdo} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-            <div className='mt-0 sm:mt-[1vh]'>
+            <div className='mt-0 sm:mt-[1vh] sm:mb-[2vh]'>
                 <button onClick={handleToggleVideo} className='text-black bg-white p-2 rounded-lg font-bold hover:scale-105 duration-200 sm:text-xl lg:text-xl'>{isPlaying ? 'Stop Me' : 'Hear Me'}</button>
             </div>
       </div>
