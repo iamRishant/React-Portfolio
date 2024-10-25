@@ -33,7 +33,7 @@ const Header = () => {
   
   
   return (
-    <div className='h-screen w-full bg-[#080102]' id='home'>
+    <div className='min-h-screen w-full bg-[#000000]' id='home'>
       <Navbar/>
 
       <div className='h-[90%] w-full flex sm:flex-col lg:flex-row'>
@@ -44,8 +44,8 @@ const Header = () => {
             In addition to coding, I enjoy teaching and sharing knowledge as a tutor. I’m eager to collaborate on innovative projects that push the boundaries of web development and enhance user experiences.</p>
         </div>
 
-        <div className='lg:w-[50%] sm:w-[100vw] lg:h-[100%] sm:h-[60%]  flex items-center flex-col'>
-            <video className={`lg:h-[65vh] sm:h-[30vh] lg:mt-[9vh] sm:pt-[3vh] sm:${isPlaying ? "block":"hidden"} lg:block`} ref={videoRef}>
+        <div className='lg:w-[50%] sm:w-[100vw] lg:h-[100%] sm:h-[60%]  flex items-center flex-col '>
+            <video className={`lg:h-[65vh] sm:h-[30vh] lg:mt-[15vh] h-full sm:pt-[3vh] bg-red sm:${isPlaying ? "block":"hidden"} lg:block`} ref={videoRef}>
                 <source src={vdo} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
